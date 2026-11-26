@@ -4,18 +4,17 @@ A single-page, static viewer for the SAMAKI aquaculture installation diagrams. T
 
 ## View locally
 
-Open [`samaki-viewer-v5.html`](samaki-viewer-v5.html) in a modern browser.
+Open [`index.html`](index.html) in a modern browser.
+
+## Deploy with Vercel
+
+Import the repository into Vercel and deploy from the repository root. This is a static site: choose **Other** if asked for a framework, and leave the build command empty. Vercel serves `index.html` from the root as the site homepage; no build configuration or runtime dependencies are needed.
 
 ## Publish with GitHub Pages
 
-1. Push this folder to a GitHub repository.
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, select the branch containing these files and the `/ (root)` folder, then save.
-4. Open the published site at `https://<owner>.github.io/<repository>/samaki-viewer-v5.html`.
-
-To serve the viewer from the site root instead, rename `samaki-viewer-v5.html` to `index.html` before publishing.
+In the repository, open **Settings → Pages**, choose **Deploy from a branch**, and select the branch containing these files and the `/ (root)` folder. The site homepage will be `https://<owner>.github.io/<repository>/`.
 
 ## Repository contents
 
-- `samaki-viewer-v5.html` — standalone viewer page.
+- `index.html` — standalone viewer page and deployment homepage.
 - `fig*.png` — PNG figure exports.
